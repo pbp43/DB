@@ -1,0 +1,107 @@
+[06-Nov-2018 15:57:48 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/git/priya/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 17:58:28 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/git/priya/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 18:53:58 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - access to vhost 'vhost' refused for user 'admin' - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 18:54:01 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - access to vhost 'vhost' refused for user 'admin' - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 19:29:57 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:30:27 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:32:28 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:45:00 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:46:40 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:46:40 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:46:40 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:48:07 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:48:07 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:48:07 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:49:38 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:49:38 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:49:38 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:51:53 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:51:53 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:51:53 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:57:31 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:57:31 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:57:31 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:00:37 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:01:36 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:05:14 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:05:14 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:05:14 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:08:00 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:08:00 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:09:05 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:09:05 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:21 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:21 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:39 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:39 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:12:23 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:12:23 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[10-Nov-2018 14:37:27 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(195): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[11-Nov-2018 18:22:12 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[17-Nov-2018 12:41:37 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - vhost testhost not found - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[17-Nov-2018 12:41:40 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - vhost testhost not found - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132

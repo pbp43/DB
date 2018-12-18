@@ -1,0 +1,514 @@
+[06-Nov-2018 15:57:48 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/git/priya/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 17:58:28 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/git/priya/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 18:53:58 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - access to vhost 'vhost' refused for user 'admin' - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 18:54:01 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - access to vhost 'vhost' refused for user 'admin' - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(190): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[06-Nov-2018 19:29:57 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:30:27 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:32:28 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_real_escape_string() in /home/denny/git/priya/dbFunction.php:20
+Stack trace:
+#0 /home/denny/git/priya/dbFunction.php(170): doLogin('devang', '3bea5605bb2b45f...')
+#1 /home/denny/git/priya/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/git/priya/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/git/priya/dbFunction.php(191): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/git/priya/dbFunction.php on line 20
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:45:00 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:45:00 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:46:40 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:46:40 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:46:40 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:48:07 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:48:07 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:48:07 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:49:38 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:49:38 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:49:38 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:51:53 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:51:53 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:51:53 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:57:31 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 19:57:31 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 19:57:31 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:00:37 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:00:37 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined index: username in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:01:36 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:01:36 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:05:14 America/New_York] PHP Notice:  Undefined index: favFood in /home/denny/git/priya/dbFunction.php on line 182
+[06-Nov-2018 20:05:14 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:05:14 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:08:00 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:08:00 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 113
+[06-Nov-2018 20:09:05 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:09:05 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:21 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:21 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:39 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:11:39 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:12:23 America/New_York] PHP Notice:  Undefined variable: newuser_query in /home/denny/git/priya/dbFunction.php on line 115
+[06-Nov-2018 20:12:23 America/New_York] PHP Warning:  mysqli::query(): Empty query in /home/denny/git/priya/dbFunction.php on line 115
+[10-Nov-2018 14:37:27 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(195): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[11-Nov-2018 18:22:12 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[17-Nov-2018 12:41:37 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - vhost testhost not found - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[17-Nov-2018 12:41:40 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Server connection error: 530, message: NOT_ALLOWED - vhost testhost not found - Potential login failure. in /home/denny/git/priya/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/git/priya/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/git/priya/dbFunction.php(193): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/git/priya/rabbitMQLib.inc on line 132
+[17-Nov-2018 17:13:54 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(168): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[24-Nov-2018 13:49:11 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 127
+[24-Nov-2018 13:50:38 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 127
+[24-Nov-2018 13:56:09 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 127
+[24-Nov-2018 14:23:22 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 144
+[24-Nov-2018 15:10:57 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 144
+[24-Nov-2018 15:14:54 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:15:07 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:17:23 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:18:38 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:22:14 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:25:10 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:25:14 America/New_York] PHP Warning:  parse_ini_file(testRabbitMQ_db.ini): failed to open stream: No such file or directory in /home/denny/dev_git/DBDevang/get_host_info.inc on line 17
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 154
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 155
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 156
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 157
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 158
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 167
+[24-Nov-2018 15:25:14 America/New_York] PHP Notice:  Undefined index: apiServer in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 168
+[24-Nov-2018 15:30:06 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(261): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[24-Nov-2018 15:32:19 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:32:23 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 161
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 164
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 167
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 173
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 177
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 180
+[24-Nov-2018 15:32:23 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 183
+[24-Nov-2018 15:37:35 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:37:51 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:37:55 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 15:38:57 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:39:01 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 15:40:02 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:40:08 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 15:40:09 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 16:03:01 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 16:03:03 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 16:03:14 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[24-Nov-2018 16:03:19 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 183
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 186
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 189
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 192
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 195
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 199
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 202
+[24-Nov-2018 16:03:20 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 205
+[27-Nov-2018 19:04:41 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:07:11 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:10:27 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:15:19 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:19:44 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 144
+[27-Nov-2018 19:19:59 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:20:03 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 144
+[27-Nov-2018 19:20:22 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:29:51 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/Downloads/DBDevang-20181128/DBDevang/rabbitMQLib.inc on line 215
+[27-Nov-2018 19:41:46 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:41:51 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/Downloads/DBDevang-20181128/DBDevang/rabbitMQLib.inc on line 215
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 183
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 186
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 189
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 192
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 195
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 199
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 202
+[27-Nov-2018 19:41:51 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 205
+[27-Nov-2018 19:42:26 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 123
+[27-Nov-2018 19:42:37 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/Downloads/DBDevang-20181128/DBDevang/rabbitMQLib.inc on line 215
+[27-Nov-2018 19:42:56 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/Downloads/DBDevang-20181128/DBDevang/dbFunction.php on line 168
+[09-Dec-2018 10:26:01 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 10:26:04 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[09-Dec-2018 10:26:17 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 10:26:19 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[09-Dec-2018 10:26:27 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 169
+[09-Dec-2018 10:39:19 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 169
+[09-Dec-2018 10:40:45 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 144
+[09-Dec-2018 10:40:49 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 10:44:45 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 10:47:14 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 10:53:21 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:03:11 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:06:33 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:08:08 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:12:34 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(287): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[09-Dec-2018 11:15:07 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:15:07 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 172
+[09-Dec-2018 11:20:04 America/New_York] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:28:44 America/New_York] PHP Notice:  Undefined index: calories in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:28:44 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:29:35 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:29:37 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:29:43 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:31:55 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(293): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[09-Dec-2018 11:41:18 America/New_York] PHP Notice:  Undefined index: username in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:41:18 America/New_York] PHP Notice:  Undefined index: item in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:41:18 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 176
+[09-Dec-2018 11:47:30 America/New_York] PHP Notice:  Undefined index: username in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:47:30 America/New_York] PHP Notice:  Undefined index: item in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:47:30 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 176
+[09-Dec-2018 11:47:31 America/New_York] PHP Notice:  Undefined index: username in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:47:31 America/New_York] PHP Notice:  Undefined index: item in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:47:31 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 176
+[09-Dec-2018 11:47:37 America/New_York] PHP Notice:  Undefined index: username in /home/denny/dev_git/DBDevang/dbFunction.php on line 171
+[09-Dec-2018 11:47:37 America/New_York] PHP Notice:  Undefined index: item in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[09-Dec-2018 11:47:37 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 176
+[09-Dec-2018 11:53:20 America/New_York] PHP Notice:  Undefined variable: t in /home/denny/dev_git/DBDevang/dbFunction.php on line 164
+[09-Dec-2018 11:53:20 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/denny/dev_git/DBDevang/dbFunction.php on line 164
+[09-Dec-2018 11:53:20 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 185
+[09-Dec-2018 11:54:47 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 169
+[09-Dec-2018 11:55:10 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 169
+[09-Dec-2018 11:55:14 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 169
+[09-Dec-2018 11:56:40 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:57:03 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:57:39 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 11:57:41 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[09-Dec-2018 11:57:48 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 11:58:05 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 12:34:07 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 12:34:19 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 12:34:25 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[09-Dec-2018 12:34:40 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 12:34:46 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[09-Dec-2018 12:34:51 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 12:22:19 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 12:31:17 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[15-Dec-2018 12:31:32 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 12:35:24 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 14:51:18 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 14:56:18 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 15:20:10 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 15:34:26 America/New_York] PHP Notice:  Undefined index: item in /home/denny/dev_git/DBDevang/dbFunction.php on line 292
+[15-Dec-2018 15:42:32 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 15:42:36 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 15:43:17 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 15:47:10 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 16:07:11 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 16:11:42 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:38:23 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:39:26 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:39:47 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:45:17 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:45:51 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 17:46:07 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 223
+[15-Dec-2018 17:46:07 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 17:46:22 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[15-Dec-2018 18:14:58 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 18:17:46 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(306): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 18:34:18 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:34:19 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:34:30 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:34:33 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 18:35:48 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:35:50 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 18:54:05 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:54:07 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 18:54:08 America/New_York] PHP Notice:  Undefined index: nf_total_carbohydrate in /home/denny/dev_git/DBDevang/dbFunction.php on line 228
+[15-Dec-2018 18:54:34 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 18:54:35 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:04:41 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:04:45 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:07:30 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:07:32 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevang/dbFunction.php on line 221
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevang/dbFunction.php on line 222
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_total_carbohydrate' in /home/denny/dev_git/DBDevang/dbFunction.php on line 223
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 19:07:32 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 229
+[15-Dec-2018 19:07:40 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[15-Dec-2018 19:10:33 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:10:35 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:10:36 America/New_York] PHP Notice:  Undefined index: nf_total_carbohydrate in /home/denny/dev_git/DBDevang/dbFunction.php on line 223
+[15-Dec-2018 19:11:38 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:11:40 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:11:57 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:11:59 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevang/dbFunction.php on line 221
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevang/dbFunction.php on line 222
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 19:12:00 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 229
+[15-Dec-2018 19:12:06 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 170
+[15-Dec-2018 19:13:28 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:13:29 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevang/dbFunction.php on line 221
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevang/dbFunction.php on line 222
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 19:13:30 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 229
+[15-Dec-2018 19:13:51 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:13:52 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevang/dbFunction.php on line 221
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevang/dbFunction.php on line 222
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 19:13:52 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 229
+[15-Dec-2018 19:14:03 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:14:05 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:14:39 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:14:42 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:14:42 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevang/dbFunction.php on line 204
+[15-Dec-2018 19:14:42 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevang/dbFunction.php on line 207
+[15-Dec-2018 19:14:42 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 210
+[15-Dec-2018 19:14:42 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevang/dbFunction.php on line 213
+[15-Dec-2018 19:14:42 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevang/dbFunction.php on line 216
+[15-Dec-2018 19:14:43 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevang/dbFunction.php on line 220
+[15-Dec-2018 19:14:43 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevang/dbFunction.php on line 221
+[15-Dec-2018 19:14:43 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevang/dbFunction.php on line 222
+[15-Dec-2018 19:14:43 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevang/dbFunction.php on line 226
+[15-Dec-2018 19:14:43 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevang/dbFunction.php on line 229
+[15-Dec-2018 19:15:00 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:15:03 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:15:49 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:16:03 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:16:16 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:17:53 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:17:58 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:18:41 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:18:42 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:18:43 America/New_York] PHP Notice:  Undefined index: nf_total_carbohydrate in /home/denny/dev_git/DBDevang/dbFunction.php on line 223
+[15-Dec-2018 19:18:59 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:19:49 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:20:03 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:24:44 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:25:37 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:25:40 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:26:35 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:27:49 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:30:23 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:30:25 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:31:00 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:31:12 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPConnectionException: Socket error: could not connect to host. in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:110
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(110): AMQPConnection->connect()
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[15-Dec-2018 19:31:30 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[15-Dec-2018 19:31:51 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevang/dbFunction.php on line 123
+[15-Dec-2018 19:31:53 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 215
+[15-Dec-2018 19:32:00 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevang/dbFunction.php on line 174
+[15-Dec-2018 19:32:42 America/New_York] PHP Fatal error:  Failed to start request processor: AMQPException: Library error: unexpected protocol state in /home/denny/dev_git/DBDevang/rabbitMQLib.inc:122
+Stack trace:
+#0 /home/denny/dev_git/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#1 /home/denny/dev_git/DBDevang/dbFunction.php(318): rabbitMQServer->process_requests('requestProcesso...')
+#2 {main} in /home/denny/dev_git/DBDevang/rabbitMQLib.inc on line 132
+[17-Dec-2018 20:23:24 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 225
+[17-Dec-2018 20:23:36 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:23:37 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 242
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 245
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 248
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 251
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 254
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 258
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 259
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 260
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_total_carbohydrate' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 261
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 265
+[17-Dec-2018 20:23:38 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 268
+[17-Dec-2018 20:23:47 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:23:49 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:24:02 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:24:04 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:24:14 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:24:15 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:24:23 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 204
+[17-Dec-2018 20:26:24 America/New_York] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function deletetracker(), 1 passed in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 349 and exactly 2 expected in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php:284
+Stack trace:
+#0 /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php(349): deletetracker('devang')
+#1 /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc(58): requestProcessor(Array)
+#2 [internal function]: rabbitMQServer->process_message(Object(AMQPEnvelope), Object(AMQPQueue))
+#3 /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc(122): AMQPQueue->consume(Array)
+#4 /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php(367): rabbitMQServer->process_requests('requestProcesso...')
+#5 {main}
+  thrown in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 284
+[17-Dec-2018 20:31:08 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:31:10 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:31:21 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 204
+[17-Dec-2018 20:31:52 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:32:01 America/New_York] PHP Notice:  Undefined variable: output in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 131
+[17-Dec-2018 20:47:18 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:47:19 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'fields' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 242
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'item_id' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 245
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'item_name' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 248
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'brand_name' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 251
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_calories' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 254
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_sodium' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 258
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_protein' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 259
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_sugars' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 260
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_total_carbohydrate' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 261
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_qty' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 265
+[17-Dec-2018 20:47:20 America/New_York] PHP Warning:  Illegal string offset 'nf_serving_size_unit' in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 268
+[17-Dec-2018 20:47:48 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
+[17-Dec-2018 20:47:49 America/New_York] PHP Deprecated:  Function AMQPQueue::declare() is deprecated in /home/denny/dev_git/DBDevangtest/DBDevang/rabbitMQLib.inc on line 215
+[17-Dec-2018 20:53:27 America/New_York] PHP Notice:  Undefined variable: response in /home/denny/dev_git/DBDevangtest/DBDevang/dbFunction.php on line 153
